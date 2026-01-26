@@ -23,6 +23,10 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Setup Hugo (extended)
         uses: peaceiris/actions-hugo@v3
         with:
@@ -31,7 +35,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --minify
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
           echo "jensending.top" > public/CNAME
 
       - name: Upload artifact

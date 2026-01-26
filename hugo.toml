@@ -1,0 +1,23 @@
+baseURL = "https://jensending.dev/"
+languageCode = "en-gb"
+title = "Wenjie Jensen Ding"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+
+[params]
+  author = "Your Name"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2

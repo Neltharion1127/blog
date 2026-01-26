@@ -1,0 +1,34 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo local server lock
+/.hugo_build.lock
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Node (in case you later add tooling)
+node_modules/
+
+# Env files
+.env
+.env.*
+
+# SSH keys (safety net)
+*.pem
+*.key

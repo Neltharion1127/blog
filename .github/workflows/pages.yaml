@@ -35,7 +35,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify --baseURL "https://jensending.top/"
           echo "jensending.top" > public/CNAME
 
       - name: Upload artifact
